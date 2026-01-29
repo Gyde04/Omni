@@ -1,9 +1,10 @@
 import Image from "next/image";
+import ProductsSection from "./products-section";
 import ThemeToggle from "./theme-toggle";
 
 const products = [
   {
-    name: "LegitWriter.com",
+    name: "LegitWriter",
     sector: "AI humanizing",
     description:
       "An AI humanizer that rewrites AI-assisted text into natural, human-like writing and includes multi-detector AI checks.",
@@ -11,6 +12,7 @@ const products = [
     tags: ["Humanizer", "AI detection", "Writing"],
     image: "/products/orion-ai-fabric.svg",
     imageAlt: "Abstract visualization for LegitWriter.com",
+    url: "https://www.legitwriter.com",
   },
   {
     name: "chatAVA",
@@ -21,6 +23,56 @@ const products = [
     tags: ["Chatbot", "Support", "Automation"],
     image: "/products/lumen-edge-os.svg",
     imageAlt: "Abstract visualization for chatAVA",
+  },
+  {
+    name: "Cashstack",
+    sector: "Fintech app",
+    description:
+      "A fintech AI app for smarter cash flow, payments, and financial decisions.",
+    status: "Product",
+    tags: ["Fintech", "Payments", "Finance"],
+    image: "/products/lumen-edge-os.svg",
+    imageAlt: "Abstract visualization for Cashstack",
+  },
+  {
+    name: "VetMemos",
+    sector: "Vet scribe",
+    description:
+      "An AI vet scribe that turns consultations into clear, structured clinical notes.",
+    status: "Product",
+    tags: ["Scribe", "Clinics", "Notes"],
+    image: "/products/nimbus-secure-cloud.svg",
+    imageAlt: "Abstract visualization for VetMemos",
+  },
+  {
+    name: "SummaryHub",
+    sector: "Essay summaries",
+    description:
+      "A fast AI tool that summarizes essays into clear, accurate highlights.",
+    status: "Product",
+    tags: ["Summaries", "Essays", "Study"],
+    image: "/products/aether-health-grid.svg",
+    imageAlt: "Abstract visualization for SummaryHub",
+  },
+  {
+    name: "Thynkly",
+    sector: "AI productivity",
+    description:
+      "An AI workspace for organizing ideas, drafting content, and planning smarter.",
+    status: "Product",
+    tags: ["Ideas", "Planning", "Writing"],
+    image: "/products/atlas-market-signal.svg",
+    imageAlt: "Abstract visualization for Thynkly",
+  },
+  {
+    name: "Blindspot",
+    sector: "AI insights",
+    description:
+      "An AI insight tool that surfaces gaps, risks, and missed signals in workflows.",
+    status: "Product",
+    tags: ["Insights", "Risk", "Analytics"],
+    image: "/products/orion-ai-fabric.svg",
+    imageAlt: "Abstract visualization for Blindspot",
   },
   {
     name: "Iwritebeta",
@@ -136,42 +188,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="products" className="mt-20">
-          <div className="flex items-center justify-between">
-            <h2 className="text-lg font-semibold uppercase tracking-[0.3em]">
-              Products
-            </h2>
-            <span className="text-xs uppercase tracking-[0.3em] text-[var(--muted-3)]">
-              View all
-            </span>
-          </div>
-          <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {products.map((product) => (
-              <article key={product.name} className="space-y-4">
-                <div className="relative aspect-square overflow-hidden rounded-2xl border border-[var(--border)]">
-                  <Image
-                    src={product.image}
-                    alt={product.imageAlt}
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 33vw"
-                    className="object-cover grayscale"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-base font-semibold uppercase tracking-[0.2em]">
-                    {product.name}
-                  </h3>
-                  <p className="text-sm text-[var(--muted)]">{product.description}</p>
-                  <div className="flex flex-wrap gap-2 text-[11px] uppercase tracking-[0.2em] text-[var(--muted-2)]">
-                    {product.tags.map((tag) => (
-                      <span key={tag}>{tag}</span>
-                    ))}
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
+        <ProductsSection products={products} />
 
         <section id="about" className="mt-20">
           <div className="flex items-center justify-between">
@@ -278,7 +295,7 @@ export default function Home() {
                   <p className="text-xs uppercase tracking-[0.3em] text-[var(--muted-2)]">
                     Phone
                   </p>
-                  <p className="mt-2">+1 (415) 555-0196</p>
+                  <p className="mt-2">+44 7932070056</p>
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-[0.3em] text-[var(--muted-2)]">

@@ -124,8 +124,8 @@ export default function Home() {
               technology ltd
             </p>
             <p className="mt-6 max-w-2xl text-base text-[var(--muted)]">
-              We build AI products that humanize content, power intelligent
-              conversations, and scale with real-world users.
+              We build AI-powered tools that help organizations communicate
+              better, streamline operations, and scale authentically.
             </p>
             <a
               className="mt-8 rounded-full bg-[var(--accent)] px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-[var(--accent-hover)]"

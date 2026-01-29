@@ -115,14 +115,24 @@ export default function Home() {
     <div className="min-h-screen bg-[var(--page-bg)] text-[var(--page-text)]">
       <header className="border-b border-[var(--border)]">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-5">
-          <div className="leading-none">
-            <p className="text-2xl font-black lowercase tracking-tight text-[var(--page-text)]">
-              omnihorizon
-              <span className="align-super text-xs">®</span>
-            </p>
-            <p className="mt-1 text-[11px] uppercase tracking-[0.45em] text-[var(--muted-2)]">
-              technology ltd
-            </p>
+          <div className="flex items-center gap-2">
+            <Image
+              src="/Omnihorizon tech-5.PNG"
+              alt="OMNI HORIZON logo"
+              width={56}
+              height={56}
+              className="h-12 w-12"
+              priority
+            />
+            <div className="leading-none">
+              <p className="text-2xl font-black lowercase tracking-tight text-[var(--page-text)]">
+                omnihorizon
+                <span className="align-super text-xs">®</span>
+              </p>
+              <p className="mt-1 text-[11px] uppercase tracking-[0.45em] text-[var(--muted-2)]">
+                technology ltd
+              </p>
+            </div>
           </div>
           <nav className="hidden items-center gap-6 text-xs font-semibold uppercase tracking-[0.25em] text-[var(--muted-2)] md:flex">
             <a className="transition hover:text-[var(--page-text)]" href="#products">

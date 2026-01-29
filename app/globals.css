@@ -28,6 +28,7 @@ html[data-theme="dark"] {
   --card-soft: #111111;
   --accent: #2563eb;
   --accent-hover: #3b82f6;
+  --brand-accent: #6fbac2;
   --brand-mark-bg: #ffffff;
   --brand-mark-text: #000000;
   --hero-overlay: rgba(0, 0, 0, 0.6);
@@ -45,6 +46,7 @@ html[data-theme="light"] {
   --card-soft: #f8fafc;
   --accent: #2563eb;
   --accent-hover: #1d4ed8;
+  --brand-accent: #2f7f88;
   --brand-mark-bg: #0f172a;
   --brand-mark-text: #ffffff;
   --hero-overlay: rgba(255, 255, 255, 0.75);

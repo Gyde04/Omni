@@ -20,9 +20,9 @@ type ProductsSectionProps = {
 
 export default function ProductsSection({ products }: ProductsSectionProps) {
   const [showAll, setShowAll] = useState(false);
-  const hasOverflow = products.length > 6;
+  const hasOverflow = products.length > 3;
   const visibleProducts = useMemo(
-    () => (showAll || !hasOverflow ? products : products.slice(0, 6)),
+    () => (showAll || !hasOverflow ? products : products.slice(0, 3)),
     [products, showAll, hasOverflow]
   );
 
@@ -59,24 +59,27 @@ export default function ProductsSection({ products }: ProductsSectionProps) {
         className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3"
       >
         {visibleProducts.map((product) => (
-          <article key={product.name} className="space-y-4">
-            <div className="relative aspect-square overflow-hidden rounded-2xl border border-[var(--border)]">
+          <article
+            key={product.name}
+            className="group flex h-full flex-col overflow-hidden rounded-[28px] border border-[var(--border)] bg-[var(--card-bg)] shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+          >
+            <div className="relative aspect-[4/3] overflow-hidden bg-white">
               <Image
                 src={product.image}
                 alt={product.imageAlt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"
-                className="object-cover grayscale"
+                className="object-cover object-top transition duration-300 group-hover:scale-[1.02]"
               />
             </div>
-            <div className="space-y-2">
-              <h3 className="text-base font-semibold uppercase tracking-[0.2em]">
+            <div className="flex flex-1 flex-col gap-3 bg-[var(--card-bg)] px-6 pb-7 pt-6">
+              <h3 className="text-xl font-semibold text-[var(--page-text)]">
                 {product.url ? (
                   <a
                     href={product.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="transition hover:text-[var(--muted-2)]"
+                    className="transition group-hover:text-[var(--muted-2)]"
                   >
                     {product.name}
                   </a>
@@ -84,13 +87,30 @@ export default function ProductsSection({ products }: ProductsSectionProps) {
                   product.name
                 )}
               </h3>
-              <p className="text-sm text-[var(--muted)]">
+              <p className="min-h-[84px] text-base text-[var(--muted)]">
                 {product.description}
               </p>
-              <div className="flex flex-wrap gap-2 text-[11px] uppercase tracking-[0.2em] text-[var(--muted-2)]">
+              <div className="min-h-[18px] flex flex-wrap gap-2 text-[11px] uppercase tracking-[0.2em] text-[var(--muted-2)]">
                 {product.tags.map((tag) => (
                   <span key={tag}>{tag}</span>
                 ))}
+              </div>
+              <div className="mt-auto">
+                {product.url ? (
+                  <a
+                    href={product.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--page-text)] transition group-hover:text-[var(--muted-2)]"
+                  >
+                    Visit {product.name}
+                    <span aria-hidden="true">→</span>
+                  </a>
+                ) : (
+                  <span className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--muted-2)]">
+                    Learn more
+                  </span>
+                )}
               </div>
             </div>
           </article>

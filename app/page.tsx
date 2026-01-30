@@ -10,9 +10,31 @@ const products = [
       "An AI humanizer that rewrites AI-assisted text into natural, human-like writing and includes multi-detector AI checks.",
     status: "Top product",
     tags: ["Humanizer", "AI detection", "Writing"],
-    image: "/products/orion-ai-fabric.svg",
+    image: "/products/legitWriter.png",
     imageAlt: "Abstract visualization for LegitWriter.com",
     url: "https://www.legitwriter.com",
+  },
+  {
+    name: "Reelup",
+    sector: "AI video",
+    description:
+      "Create engaging video content effortlessly with AI-driven video generation and editing tools. Transform your ideas into stunning visual stories.",
+    status: "Product",
+    tags: ["Video", "Generation", "Editing"],
+    image: "/products/reelup.png",
+    imageAlt: "Abstract visualization for Reelup",
+    url: "https://www.reelup.ai/",
+  },
+  {
+    name: "VetMemos",
+    sector: "Vet scribe",
+    description:
+      "An AI vet scribe that turns consultations into clear, structured clinical notes.",
+    status: "Product",
+    tags: ["Scribe", "Clinics", "Notes"],
+    image: "/products/vetmemos 3.png",
+    imageAlt: "Abstract visualization for VetMemos",
+    url: "https://vetmemos.com",
   },
   {
     name: "chatAVA",
@@ -25,26 +47,6 @@ const products = [
     imageAlt: "Abstract visualization for chatAVA",
   },
   {
-    name: "Cashstack",
-    sector: "Fintech app",
-    description:
-      "A fintech AI app for smarter cash flow, payments, and financial decisions.",
-    status: "Product",
-    tags: ["Fintech", "Payments", "Finance"],
-    image: "/products/lumen-edge-os.svg",
-    imageAlt: "Abstract visualization for Cashstack",
-  },
-  {
-    name: "VetMemos",
-    sector: "Vet scribe",
-    description:
-      "An AI vet scribe that turns consultations into clear, structured clinical notes.",
-    status: "Product",
-    tags: ["Scribe", "Clinics", "Notes"],
-    image: "/products/nimbus-secure-cloud.svg",
-    imageAlt: "Abstract visualization for VetMemos",
-  },
-  {
     name: "SummaryHub",
     sector: "Essay summaries",
     description:
@@ -55,24 +57,24 @@ const products = [
     imageAlt: "Abstract visualization for SummaryHub",
   },
   {
+    name: "Cashstack",
+    sector: "Fintech app",
+    description:
+      "A fintech AI app for smarter cash flow, payments, and financial decisions.",
+    status: "Product",
+    tags: ["Fintech", "Payments", "Finance"],
+    image: "/products/lumen-edge-os.svg",
+    imageAlt: "Abstract visualization for Cashstack",
+  },
+  {
     name: "Thynkly",
     sector: "AI productivity",
     description:
       "An AI workspace for organizing ideas, drafting content, and planning smarter.",
     status: "Product",
     tags: ["Ideas", "Planning", "Writing"],
-    image: "/products/atlas-market-signal.svg",
-    imageAlt: "Abstract visualization for Thynkly",
-  },
-  {
-    name: "Blindspot",
-    sector: "AI insights",
-    description:
-      "An AI insight tool that surfaces gaps, risks, and missed signals in workflows.",
-    status: "Product",
-    tags: ["Insights", "Risk", "Analytics"],
-    image: "/products/orion-ai-fabric.svg",
-    imageAlt: "Abstract visualization for Blindspot",
+    image: "/products/Thynkly.jpeg",
+    imageAlt: "Thynkly product visual",
   },
   {
     name: "Iwritebeta",
@@ -83,6 +85,16 @@ const products = [
     tags: ["Writing", "Humanizer", "Editing"],
     image: "/products/harbor-digital-twin.svg",
     imageAlt: "Abstract visualization for Iwritebeta",
+  },
+  {
+    name: "Blindspot",
+    sector: "AI insights",
+    description:
+      "An AI insight tool that surfaces gaps, risks, and missed signals in workflows.",
+    status: "Product",
+    tags: ["Insights", "Risk", "Analytics"],
+    image: "/products/orion-ai-fabric.svg",
+    imageAlt: "Abstract visualization for Blindspot",
   },
 ];
 
@@ -121,7 +133,7 @@ export default function Home() {
               alt="OMNI HORIZON logo"
               width={56}
               height={56}
-              className="h-12 w-12"
+              className="h-12 w-12 object-contain"
               priority
             />
             <div className="leading-none">
@@ -276,53 +288,125 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="mt-20">
-          <div className="rounded-2xl border border-[var(--border)] p-8 text-[var(--muted)]">
-            <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-              <div className="space-y-4">
-                <h2 className="text-lg font-semibold uppercase tracking-[0.3em] text-[var(--page-text)]">
-                  Contact
-                </h2>
-                <p>
-                  Tell us about your product, timeline, and goals. We respond
-                  within 48 hours.
-                </p>
-                <a
-                  className="inline-flex rounded-full bg-[var(--accent)] px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-[var(--accent-hover)]"
-                  href="mailto:partnerships@omnihorizon.tech"
-                >
-                  Email us
-                </a>
-              </div>
-              <div className="space-y-4 text-sm">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.3em] text-[var(--muted-2)]">
-                    Email
-                  </p>
-                  <p className="mt-2">partnerships@omnihorizon.tech</p>
-                </div>
-                <div>
-                  <p className="text-xs uppercase tracking-[0.3em] text-[var(--muted-2)]">
-                    Phone
-                  </p>
-                  <p className="mt-2">+44 7932070056</p>
-                </div>
-                <div>
-                  <p className="text-xs uppercase tracking-[0.3em] text-[var(--muted-2)]">
-                    Location
-                  </p>
-                  <p className="mt-2">United Kingdom</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
-      <footer className="border-t border-[var(--border)]">
-        <div className="mx-auto flex w-full max-w-6xl flex-col items-start justify-between gap-4 px-6 py-8 text-xs text-[var(--muted-3)] md:flex-row md:items-center">
-          <p className="uppercase tracking-[0.35em]">OMNI HORIZON TECHNOLOGY LTD</p>
-          <p>AI products with intent.</p>
+      <footer className="border-t border-[var(--border)] bg-[var(--card-bg)]">
+        <div className="mx-auto w-full max-w-6xl px-6 py-12">
+          <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr]">
+            <div className="space-y-5">
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/Omnihorizon tech-5.PNG"
+                  alt="OMNI HORIZON logo"
+                  width={44}
+                  height={44}
+                  className="h-10 w-10 object-contain"
+                />
+                <div className="leading-none">
+                  <p className="text-base font-semibold uppercase tracking-[0.2em] text-[var(--page-text)]">
+                    OMNI HORIZON
+                  </p>
+                  <p className="mt-1 text-[10px] uppercase tracking-[0.45em] text-[var(--muted-2)]">
+                    TECHNOLOGY LTD
+                  </p>
+                </div>
+              </div>
+              <p className="max-w-sm text-sm text-[var(--muted)]">
+                Your gateway to infinite possibilities. Transform your business
+                with innovative solutions.
+              </p>
+              <p className="text-xs text-[var(--muted-2)]">
+                Founded in 2024 · 20+ employees
+              </p>
+              <div className="flex items-center gap-3">
+                <a
+                  href="#"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-[var(--border)] text-[var(--muted-2)] transition hover:text-[var(--page-text)]"
+                  aria-label="X"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-4 w-4"
+                    fill="currentColor"
+                  >
+                    <path d="M17.6 4.5h2.1l-4.6 5.3 5.4 9.7h-4.2l-3.3-5.8-4.9 5.8H5.9l5-5.9-5.2-9.3h4.3l3 5.4 4.6-5.4Z" />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-[var(--border)] text-[var(--muted-2)] transition hover:text-[var(--page-text)]"
+                  aria-label="LinkedIn"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-4 w-4"
+                    fill="currentColor"
+                  >
+                    <path d="M6.9 8.6H3.7v11.2h3.2V8.6Zm-1.6-5a1.9 1.9 0 1 0 0 3.9 1.9 1.9 0 0 0 0-3.9ZM20.5 13.1c0-3-1.6-4.4-3.7-4.4a3.2 3.2 0 0 0-2.9 1.6V8.6h-3.1v11.2h3.1v-6.2c0-1.6.3-3.2 2.3-3.2 2 0 2 1.9 2 3.3v6.1h3.1v-6.7Z" />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-[var(--border)] text-[var(--muted-2)] transition hover:text-[var(--page-text)]"
+                  aria-label="GitHub"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-4 w-4"
+                    fill="currentColor"
+                  >
+                    <path d="M12 2.5a9.5 9.5 0 0 0-3 18.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.5 1.1 3.1.9.1-.7.3-1.1.6-1.3-2.2-.2-4.5-1.1-4.5-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.7s.9-.3 2.8 1a9.7 9.7 0 0 1 5.1 0c1.9-1.3 2.8-1 2.8-1 .5 1.3.2 2.3.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.8-4.5 5 .3.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A9.5 9.5 0 0 0 12 2.5Z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div className="space-y-3 text-sm">
+              <p className="text-sm font-semibold text-[var(--page-text)]">
+                Product
+              </p>
+              <a className="block text-[var(--muted)] hover:text-[var(--page-text)]" href="#">
+                Features
+              </a>
+            </div>
+            <div className="space-y-3 text-sm">
+              <p className="text-sm font-semibold text-[var(--page-text)]">
+                Company
+              </p>
+              <a className="block text-[var(--muted)] hover:text-[var(--page-text)]" href="#about">
+                About
+              </a>
+              <a className="block text-[var(--muted)] hover:text-[var(--page-text)]" href="#">
+                Blog
+              </a>
+            </div>
+            <div className="space-y-3 text-sm">
+              <p className="text-sm font-semibold text-[var(--page-text)]">
+                Legal
+              </p>
+              <a className="block text-[var(--muted)] hover:text-[var(--page-text)]" href="#">
+                Privacy
+              </a>
+              <a className="block text-[var(--muted)] hover:text-[var(--page-text)]" href="#">
+                Terms
+              </a>
+              <a className="block text-[var(--muted)] hover:text-[var(--page-text)]" href="#">
+                Cookies
+              </a>
+            </div>
+            <div id="contact" className="space-y-3 text-sm scroll-mt-24">
+              <p className="text-sm font-semibold text-[var(--page-text)]">
+                Contact
+              </p>
+              <p className="text-[var(--muted)]">+44 7932070056</p>
+              <a
+                className="block text-[var(--muted)] hover:text-[var(--page-text)]"
+                href="mailto:partnerships@omnihorizon.tech"
+              >
+                partnerships@omnihorizon.tech
+              </a>
+              <p className="text-[var(--muted)]">United Kingdom</p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

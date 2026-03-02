@@ -37,6 +37,17 @@ const products = [
     url: "https://www.footballagentexams.com",
   },
   {
+    name: "VibeShootIt",
+    sector: "AI photography",
+    description:
+      "A creative platform for generating polished, social-ready visuals from your concepts in minutes.",
+    status: "Product",
+    tags: ["Photography", "Creative", "Visuals"],
+    image: "/products/vibeshotit.png",
+    imageAlt: "VibeShootIt product preview",
+    url: "https://www.vibeshootit.com/",
+  },
+  {
     name: "VetMemos",
     sector: "Vet scribe",
     description:

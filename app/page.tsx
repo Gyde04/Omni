@@ -21,7 +21,7 @@ const products = [
       "Create engaging video content effortlessly with AI-driven video generation and editing tools. Transform your ideas into stunning visual stories.",
     status: "Product",
     tags: ["Video", "Generation", "Editing"],
-    image: "/products/reelup.png",
+    image: "/products/reelup-20260302.png",
     imageAlt: "Abstract visualization for Reelup",
     url: "https://www.reelup.ai/",
   },

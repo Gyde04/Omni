@@ -26,6 +26,17 @@ const products = [
     url: "https://www.reelup.ai/",
   },
   {
+    name: "FootballAgentExams",
+    sector: "Football education",
+    description:
+      "A focused platform for football agent exam preparation with study resources and structured practice support.",
+    status: "Product",
+    tags: ["Football", "Exams", "Preparation"],
+    image: "/products/footballagentexams.png",
+    imageAlt: "FootballAgentExams platform preview",
+    url: "https://www.footballagentexams.com",
+  },
+  {
     name: "VetMemos",
     sector: "Vet scribe",
     description:
@@ -43,8 +54,8 @@ const products = [
       "A conversational AI assistant built to support customers, automate workflows, and respond instantly.",
     status: "Top product",
     tags: ["Chatbot", "Support", "Automation"],
-    image: "/products/lumen-edge-os.svg",
-    imageAlt: "Abstract visualization for chatAVA",
+    image: "/products/chatAVA.png",
+    imageAlt: "chatAVA conversational assistant product preview",
   },
   {
     name: "SummaryHub",
@@ -53,8 +64,8 @@ const products = [
       "A fast AI tool that summarizes essays into clear, accurate highlights.",
     status: "Product",
     tags: ["Summaries", "Essays", "Study"],
-    image: "/products/aether-health-grid.svg",
-    imageAlt: "Abstract visualization for SummaryHub",
+    image: "/products/summaryhub.png",
+    imageAlt: "SummaryHub essay summary product preview",
   },
   {
     name: "Cashstack",
@@ -63,8 +74,8 @@ const products = [
       "A fintech AI app for smarter cash flow, payments, and financial decisions.",
     status: "Product",
     tags: ["Fintech", "Payments", "Finance"],
-    image: "/products/lumen-edge-os.svg",
-    imageAlt: "Abstract visualization for Cashstack",
+    image: "/products/cashstack.png",
+    imageAlt: "Cashstack fintech app product preview",
   },
   {
     name: "Thynkly",
@@ -83,8 +94,8 @@ const products = [
       "A humanizing AI writing tool that refines tone, clarity, and originality for everyday writing.",
     status: "Top product",
     tags: ["Writing", "Humanizer", "Editing"],
-    image: "/products/harbor-digital-twin.svg",
-    imageAlt: "Abstract visualization for Iwritebeta",
+    image: "/products/iwritebeta.png",
+    imageAlt: "Iwritebeta AI writing tool product preview",
   },
   {
     name: "Blindspot",
@@ -93,8 +104,18 @@ const products = [
       "An AI insight tool that surfaces gaps, risks, and missed signals in workflows.",
     status: "Product",
     tags: ["Insights", "Risk", "Analytics"],
-    image: "/products/orion-ai-fabric.svg",
-    imageAlt: "Abstract visualization for Blindspot",
+    image: "/products/blindspot.png",
+    imageAlt: "Blindspot AI insights product preview",
+  },
+  {
+    name: "SportyClaw",
+    sector: "Sports analytics",
+    description:
+      "A sports intelligence product that analyzes games and books betting games for users.",
+    status: "Product",
+    tags: ["Sports", "Analysis", "Betting"],
+    image: "/products/sportyClaw.png",
+    imageAlt: "SportyClaw sports analytics product preview",
   },
 ];
 
